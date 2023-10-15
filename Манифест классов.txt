@@ -1,0 +1,12 @@
+Блок: hero
+Элементы: hero__container, hero__content, hero__title, hero__info, hero__text, hero__circle, hero__icecream, 
+          hero__milk, hero__girl
+Модификатор: hero__title--accent
+Блок: hero-buttons
+Элементы: hero-buttons__item, hero-buttons__btn
+Модификаторы: hero-buttons__btn--primary, hero-buttons__btn--secondary
+Блок: more
+Элемент: more__icon
+Микс: more__hero
+Блок: hero-account
+Элементы: hero-account__item, hero-account__number, hero-account__type

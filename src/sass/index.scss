@@ -1,2 +1,8 @@
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './utils/placeholders';
+@import './utils/mixins';
 @import './common';
-@import './example';
+@import './components/container';
+@import './components/hero';
+@import './components/more';

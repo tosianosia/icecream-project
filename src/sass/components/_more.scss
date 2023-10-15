@@ -1,0 +1,44 @@
+.more {
+  @include centeredFlex(inline-flex);
+
+  background-color: $primary-white-color;
+  border-radius: 50%;
+
+  transition: background-color 250ms $timing-function,
+    box-shadow 250ms $timing-function, transform 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $first-hover-color;
+    box-shadow: $box-shadow;
+    transform: scale(1.2);
+  }
+}
+
+.more__hero {
+  width: 18px;
+  height: 18px;
+
+  @include desktop {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.more__icon {
+  width: 6px;
+  height: 6px;
+  fill: $accent-color;
+
+  @include desktop {
+    width: 9px;
+    height: 9px;
+  }
+
+  transition: transform 250ms $timing-function;
+
+  .more:hover > &,
+  .more:focus > & {
+    transform: scale(1.2) rotate(90deg);
+  }
+}

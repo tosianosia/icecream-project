@@ -1,0 +1,311 @@
+.hero {
+  background-color: $hero-bg-color;
+}
+
+.hero__container {
+  position: relative;
+  padding-top: 193px;
+  padding-bottom: 160px;
+  overflow: hidden;
+
+  @include tablet {
+    padding-top: 102px;
+    padding-bottom: 34px;
+  }
+
+  @include desktop {
+    padding-top: 171px;
+    padding-bottom: 56px;
+  }
+}
+
+.hero__content {
+  position: relative;
+  z-index: 4;
+  width: 218px;
+
+  @include tablet {
+    width: 162px;
+    margin-bottom: 66px;
+  }
+
+  @include desktop {
+    width: 277px;
+    margin-bottom: 112px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 19px;
+
+  color: $primary-white-color;
+  font-family: $logo-font;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @include tablet {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  @include desktop {
+    margin-bottom: 25px;
+    font-size: 38px;
+  }
+
+  &--accent {
+    color: $accent-color;
+    font-size: 48px;
+    line-height: 0.97;
+    letter-spacing: normal;
+
+    @include tablet {
+      font-size: 34px;
+      line-height: 0.91;
+      letter-spacing: 0.04em;
+    }
+
+    @include desktop {
+      font-size: 58px;
+    }
+  }
+}
+
+.hero__info {
+  width: 114px;
+  margin-left: 120px;
+
+  @include limitedMobile {
+    display: none;
+  }
+
+  @include desktop {
+    width: 200px;
+    margin-left: 180px;
+  }
+}
+
+.hero__text {
+  margin-bottom: 7px;
+
+  color: $primary-white-color;
+  font-size: 8px;
+  line-height: 1.5;
+
+  @include desktop {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.hero__circle {
+  position: absolute;
+  top: 83px;
+  left: 11.25%;
+  z-index: 1;
+  width: 346px;
+  height: 344px;
+  background-color: $subtitle-color;
+  border-radius: 50%;
+
+  @include tablet {
+    top: 31px;
+    left: 307px;
+    width: 324px;
+    height: 322px;
+  }
+
+  @include desktop {
+    top: 52px;
+    left: 435px;
+    width: 538px;
+    height: 538px;
+  }
+}
+
+.hero__icecream {
+  position: absolute;
+  bottom: 0;
+  left: 36.56%;
+  z-index: 3;
+
+  @include tablet {
+    left: 378px;
+  }
+
+  @include desktop {
+    left: 554px;
+  }
+}
+
+.hero__milk {
+  position: absolute;
+  bottom: 28px;
+  left: 34px;
+
+  @include limitedMobile {
+    display: none;
+  }
+
+  @include desktop {
+    bottom: 45px;
+    left: 37px;
+  }
+}
+
+.hero__girl {
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+  z-index: 2;
+
+  @include limitedMobile {
+    display: none;
+  }
+
+  @include desktop {
+    right: 69px;
+  }
+}
+
+// Hero-buttons
+
+.hero-buttons {
+  @extend %list;
+  display: flex;
+}
+
+.hero-buttons__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+
+    @include desktop {
+      margin-right: 15px;
+    }
+  }
+}
+
+.hero-buttons__btn {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 20px;
+
+  font-size: 8px;
+  line-height: 1.25;
+  text-decoration: none;
+
+  transition: background-color 250ms $timing-function;
+
+  @include desktop {
+    padding: 11px 21px;
+
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  &--primary {
+    color: $accent-color;
+    background-color: $primary-white-color;
+
+    &:hover,
+    &:focus {
+      background-color: $first-hover-color;
+    }
+  }
+
+  &--secondary {
+    color: $primary-white-color;
+    background-color: $accent-color;
+
+    &:hover,
+    &:focus {
+      background-color: $second-hover-color;
+    }
+  }
+}
+
+// Hero-account
+
+.hero-account {
+  @extend %list;
+  position: absolute;
+  top: 96px;
+  right: 44px;
+  width: 43px;
+
+  @include limitedMobile {
+    display: none;
+  }
+
+  @include desktop {
+    top: 160px;
+    right: 75px;
+    width: 74px;
+  }
+}
+
+.hero-account__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+
+    @include desktop {
+      margin-bottom: 15px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    z-index: 1;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: $primary-white-color;
+    border-radius: 50%;
+
+    @include desktop {
+      top: -4px;
+      right: -18px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.hero-account__number {
+  z-index: 2;
+  margin-bottom: 0;
+
+  color: $accent-color;
+  font-family: $logo-font;
+  font-size: 28px;
+  letter-spacing: 0.04em;
+
+  @include desktop {
+    margin-bottom: 2px;
+    font-size: 46px;
+  }
+}
+
+.hero-account__type {
+  margin-bottom: 0;
+
+  color: $primary-white-color;
+  font-size: 8px;
+  line-height: 1.25;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}

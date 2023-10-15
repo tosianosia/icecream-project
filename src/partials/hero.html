@@ -1,0 +1,124 @@
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title--accent">passion</span>
+      </h1>
+
+      <ul class="hero-buttons">
+        <li class="hero-buttons__item">
+          <a class="hero-buttons__btn hero-buttons__btn--secondary" href="">
+            Products
+          </a>
+        </li>
+        <li class="hero-buttons__item">
+          <a class="hero-buttons__btn hero-buttons__btn--primary" href="">
+            How it’s made?
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero__info">
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+
+      <a class="more more__hero" href="">
+        <svg class="more__icon" aria-label="Link to testimonials">
+          <use href="./images/icons.svg#arrow-right"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="hero-account">
+      <li class="hero-account__item">
+        <p class="hero-account__number">16</p>
+        <p class="hero-account__type">cafes</p>
+      </li>
+      <li class="hero-account__item">
+        <p class="hero-account__number">23</p>
+        <p class="hero-account__type">food trucks</p>
+      </li>
+    </ul>
+
+    <div class="hero__circle"></div>
+
+    <!-- Rainbow ice cream -->
+    <picture>
+      <source
+        srcset="
+          ./images/desktop/hero-icecream-desktop.png    1x,
+          ./images/desktop/hero-icecream-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/tablet/hero-icecream-tablet.png    1x,
+          ./images/tablet/hero-icecream-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/mobile/hero-icecream-mobile.png    1x,
+          ./images/mobile/hero-icecream-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="hero__icecream"
+        src="./images/mobile/hero-icecream-mobile.png"
+        alt="Rainbow ice cream"
+      />
+    </picture>
+
+    <!-- Glass jug of milk -->
+    <picture>
+      <source
+        srcset="
+          ./images/desktop/hero-milk-desktop.png    1x,
+          ./images/desktop/hero-milk-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/tablet/hero-milk-tablet.png    1x,
+          ./images/tablet/hero-milk-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        class="hero__milk"
+        src="./images/tablet/hero-milk-tablet.png"
+        alt="Glass jug of milk"
+      />
+    </picture>
+
+    <!-- Beautiful girl eating ice cream -->
+    <picture>
+      <source
+        srcset="
+          ./images/desktop/hero-girl-desktop.png    1x,
+          ./images/desktop/hero-girl-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/tablet/hero-girl-tablet.png    1x,
+          ./images/tablet/hero-girl-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        class="hero__girl"
+        src="./images/tablet/hero-girl-tablet.png"
+        alt="Beautiful girl eating ice cream"
+      />
+    </picture>
+  </div>
+</section>
