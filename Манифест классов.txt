@@ -7,6 +7,9 @@
 Модификаторы: hero-buttons__btn--primary, hero-buttons__btn--secondary
 Блок: more
 Элемент: more__icon
-Микс: more__hero
+Миксы: more__hero, more__products
 Блок: hero-account
 Элементы: hero-account__item, hero-account__number, hero-account__type
+Блок: products
+Элементы: products__subtitle, products__title, products__list, products__item, products__name, 
+          products__description

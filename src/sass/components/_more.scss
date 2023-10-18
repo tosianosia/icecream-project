@@ -25,20 +25,38 @@
   }
 }
 
-.more__icon {
-  width: 6px;
-  height: 6px;
-  fill: $accent-color;
+.more__products {
+  width: 40px;
+  height: 40px;
+}
 
-  @include desktop {
-    width: 9px;
-    height: 9px;
-  }
+.more__icon {
+  fill: $accent-color;
 
   transition: transform 250ms $timing-function;
 
-  .more:hover > &,
-  .more:focus > & {
+  .more__hero > & {
+    width: 6px;
+    height: 6px;
+
+    @include desktop {
+      width: 9px;
+      height: 9px;
+    }
+  }
+
+  .more__products > & {
+    width: 13px;
+    height: 13px;
+  }
+
+  .more__hero:hover > &,
+  .more__hero:focus > & {
     transform: scale(1.2) rotate(90deg);
+  }
+
+  .more__products:hover > &,
+  .more__products:focus > & {
+    transform: scale(1.2);
   }
 }
