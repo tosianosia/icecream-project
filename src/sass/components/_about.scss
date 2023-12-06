@@ -1,0 +1,89 @@
+.about {
+  padding-top: 125px;
+
+  @include limitedMobile {
+    background-image: url('../images/milk-splashes.png');
+    background-repeat: no-repeat;
+    background-position-y: 93%;
+    background-size: 100%;
+  }
+
+  @include tablet {
+    padding-top: 130px;
+  }
+
+  @include desktop {
+    padding-top: 125px;
+
+    background-image: url('../images/milk-splashes.png');
+    background-repeat: no-repeat;
+    background-position-y: 130%;
+    background-size: 100%;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/milk-splashes@2x.png');
+    }
+  }
+}
+
+.about__title {
+  margin-bottom: 26px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  @include desktop {
+    margin-bottom: 55px;
+  }
+}
+
+.about__content {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.about__cow {
+  @include limitedMobile {
+    margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.about__overview {
+  @include limitedMobile {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include tablet {
+    flex-basis: calc((100% - 20px) / 2);
+    margin-left: 20px;
+    padding-top: 50px;
+  }
+
+  @include desktop {
+    flex-basis: 460px;
+    margin-left: 74px;
+  }
+}
+
+.about__text {
+  margin-bottom: 35px;
+}
+
+.about__description {
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 62px;
+    }
+  }
+}

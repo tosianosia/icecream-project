@@ -13,50 +13,15 @@
   }
 }
 
-.products__subtitle {
-  margin-bottom: 15px;
-
-  color: $subtitle-color;
-  font-family: $logo-font;
-  font-size: 18px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: uppercase;
-
-  @include tablet {
-    font-size: 26px;
-    line-height: 1.15;
-  }
-
-  @include desktop {
-    font-size: 30px;
-    line-height: 1.13;
-    letter-spacing: 0.04em;
-  }
-}
-
 .products__title {
   margin-bottom: 144px;
 
-  color: $accent-color;
-  font-family: $logo-font;
-  font-size: 34px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  text-align: center;
-  text-transform: uppercase;
-
   @include tablet {
     margin-bottom: 150px;
-    font-size: 48px;
   }
 
   @include desktop {
     margin-bottom: 259px;
-
-    font-size: 58px;
-    line-height: 1.14;
-    letter-spacing: 0.06em;
   }
 }
 

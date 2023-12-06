@@ -4,12 +4,19 @@
 Модификатор: hero__title--accent
 Блок: hero-buttons
 Элементы: hero-buttons__item, hero-buttons__btn
-Модификаторы: hero-buttons__btn--primary, hero-buttons__btn--secondary
+Блок: hero-account
+Элементы: hero-account__item, hero-account__number, hero-account__type
+Блок: button
+Элемент: button__icon
+Модификаторы: button--primary, button--secondary
 Блок: more
 Элемент: more__icon
 Миксы: more__hero, more__products
-Блок: hero-account
-Элементы: hero-account__item, hero-account__number, hero-account__type
+Блок: section
+Элементы: section__subtitle, section__title, section__text
+Модификатор: section--secondary, section__text--accent, section__text--spacing
 Блок: products
 Элементы: products__subtitle, products__title, products__list, products__item, products__name, 
           products__description
+Блок: about
+Элементы: about__title, about__content, about__cow, about__overview, about__text, about__description, about__milk

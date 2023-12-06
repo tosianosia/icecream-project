@@ -206,26 +206,6 @@
     font-size: 14px;
     line-height: 1.29;
   }
-
-  &--primary {
-    color: $accent-color;
-    background-color: $primary-white-color;
-
-    &:hover,
-    &:focus {
-      background-color: $first-hover-color;
-    }
-  }
-
-  &--secondary {
-    color: $primary-white-color;
-    background-color: $accent-color;
-
-    &:hover,
-    &:focus {
-      background-color: $second-hover-color;
-    }
-  }
 }
 
 // Hero-account

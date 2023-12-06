@@ -1,0 +1,71 @@
+.section {
+  &--secondary {
+    background-color: $secondary-bg-color;
+  }
+}
+
+.section__subtitle {
+  margin-bottom: 15px;
+
+  color: $subtitle-color;
+  font-family: $logo-font;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
+.section__title {
+  color: $accent-color;
+  font-family: $logo-font;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 48px;
+  }
+
+  @include desktop {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}
+
+.section__text {
+  font-weight: 500;
+  line-height: 1.62;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  @include desktop {
+    font-size: 16px;
+  }
+
+  &--accent {
+    color: $primary-black-color;
+  }
+
+  &--spacing {
+    @include tablet {
+      letter-spacing: 0.04em;
+    }
+  }
+}

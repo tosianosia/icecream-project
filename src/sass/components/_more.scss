@@ -1,5 +1,5 @@
 .more {
-  @include centeredFlex(inline-flex);
+  @include centeredFlex($type: inline-flex, $main-axis: center);
 
   background-color: $primary-white-color;
   border-radius: 50%;

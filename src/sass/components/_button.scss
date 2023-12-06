@@ -1,0 +1,52 @@
+.button {
+  @include centeredFlex(inline-flex);
+
+  border-radius: 22px;
+  border: 0;
+  padding: 12px 35px;
+  min-width: 160px;
+
+  color: $primary-black-color;
+  background-color: $primary-white-color;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  cursor: pointer;
+
+  transition: background-color 250ms $timing-function,
+    transform 250ms $timing-function;
+
+  &--primary {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    fill: $primary-white-color;
+
+    &:hover,
+    &:focus {
+      background-color: $second-hover-color;
+    }
+  }
+
+  &--secondary {
+    color: $accent-color;
+    background-color: $primary-white-color;
+    fill: $accent-color;
+
+    &:hover,
+    &:focus {
+      background-color: $first-hover-color;
+    }
+  }
+}
+
+.button__icon {
+  width: 8px;
+  height: 8px;
+  margin-left: 14px;
+
+  .button:hover &,
+  .button:focus & {
+    transform: scale(1.7);
+  }
+}
